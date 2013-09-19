@@ -5,9 +5,11 @@
 /* TODO Define system operating frequency */
 
 /* Microcontroller MIPs (FCY) */
-#define SYS_FREQ        8000000L
+#define SYS_FREQ        48000000L
 #define FCY             SYS_FREQ/4
 
+#define GetSystemClock() SYS_FREQ
+#define _XTAL_FREQ FCY
 /******************************************************************************/
 /* System Function Prototypes                                                 */
 /******************************************************************************/
