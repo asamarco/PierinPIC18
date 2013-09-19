@@ -1,4 +1,18 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"12389 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
+[s S792 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S792 . TUN PLLEN INTSRC ]
+"12394
+[s S793 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S793 . TUN0 TUN1 TUN2 TUN3 TUN4 TUN5 ]
+"12388
+[u S791 `S792 1 `S793 1 ]
+[n S791 . . . ]
+"12403
+[v _OSCTUNEbits `VS791 ~T0 @X0 0 e@3995 ]
+"144 /opt/microchip/xc8/v1.20/include/pic18.h
+[v __delay `(v ~T0 @X0 0 ef1`ul ]
+[p i __delay ]
 [; ;pic18f47j53.h: 44: extern volatile unsigned char ADCTRIG @ 0xEB8;
 "46 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
 [; ;pic18f47j53.h: 46: asm("ADCTRIG equ 0EB8h");
@@ -9775,7 +9789,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;system.h: 19: void ConfigureOscillator(void);
+[; ;system.h: 21: void ConfigureOscillator(void);
 "25 system.c
 [v _ConfigureOscillator `(v ~T0 @X0 1 ef ]
 {
@@ -9783,7 +9797,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;system.c: 25: {
 [e :U _ConfigureOscillator ]
 [f ]
-[; ;system.c: 31: }
-"31
+[; ;system.c: 33: OSCTUNEbits.PLLEN = 1;
+"33
+[e = . . _OSCTUNEbits 0 1 -> -> 1 `i `uc ]
+[; ;system.c: 34: _delay((unsigned long)((20)*(48000000L/4/4000.0)));
+"34
+[e ( __delay (1 -> * -> -> 20 `i `d / -> / -> 48000000 `l -> -> 4 `i `l `d .4000.0 `ul ]
+[; ;system.c: 36: }
+"36
 [e :UE 1356 ]
 }

@@ -12727,7 +12727,7 @@ typedef uint16_t uintptr_t;
 # 12 "/opt/microchip/xc8/v1.20/include/stdbool.h"
 typedef unsigned char bool;
 
-# 19 "system.h"
+# 21 "system.h"
 void ConfigureOscillator(void);
 
 # 13 "user.h"

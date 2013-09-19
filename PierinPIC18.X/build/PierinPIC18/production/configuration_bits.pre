@@ -12635,23 +12635,23 @@ extern void _delaywdt(unsigned long);
 extern void _delay3(unsigned char);
 
 
-# 57 "configuration_bits.c"
-#pragma config WDTEN = ON
-#pragma config PLLDIV = 1
+# 10 "configuration_bits.c"
+#pragma config WDTEN = OFF
+#pragma config PLLDIV = 3
 #pragma config CFGPLLEN = OFF
 #pragma config STVREN = ON
-#pragma config XINST = ON
+#pragma config XINST = OFF
 
 
 #pragma config CPUDIV = OSC1
 #pragma config CP0 = OFF
 
 
-#pragma config OSC = ECPLL
+#pragma config OSC = HSPLL
 #pragma config SOSCSEL = HIGH
 #pragma config CLKOEC = ON
-#pragma config FCMEN = ON
-#pragma config IESO = ON
+#pragma config FCMEN = OFF
+#pragma config IESO = OFF
 
 
 #pragma config WDTPS = 32768
@@ -12659,21 +12659,21 @@ extern void _delay3(unsigned char);
 
 #pragma config DSWDTOSC = INTOSCREF
 #pragma config RTCOSC = T1OSCREF
-#pragma config DSBOREN = ON
-#pragma config DSWDTEN = ON
-#pragma config DSWDTPS = G2
+#pragma config DSBOREN = OFF
+#pragma config DSWDTEN = OFF
+#pragma config DSWDTPS = 8192
 
 
-#pragma config IOL1WAY = ON
+#pragma config IOL1WAY = OFF
 #pragma config ADCSEL = BIT10
 #pragma config MSSP7B_EN = MSK7
 
 
-#pragma config WPFP = PAGE_127
+#pragma config WPFP = PAGE_1
 #pragma config WPCFG = OFF
 
 
 #pragma config WPDIS = OFF
-#pragma config WPEND = PAGE_WPFP
+#pragma config WPEND = PAGE_0
 #pragma config LS48MHZ = SYS48X8
 
