@@ -1,12 +1,12 @@
-<Application Description for Project Goes Here>
+<Base project for PierinPIC18>
 
-Project Owner(s):
-Author(s):
-Hardware Platform:
-Debuggers Used:
-Programmers Used:
-MPLAB Version:
-C Compiler Version:
+Project Owner(s): Asa Marco
+Author(s): Asa Marco
+Hardware Platform: PierinPIC18
+Debuggers Used: none
+Programmers Used: HIDbootloader
+MPLAB Version: 1.90
+C Compiler Version: 1.20
 Final Checksum:
 
 FILES INCLUDED IN THE PROJECT TREE:
