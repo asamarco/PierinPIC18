@@ -28,8 +28,27 @@
 void InitApp(void)
 {
     /* TODO Initialize User Ports/Peripherals/Project here */
-
     /* Setup analog functionality and port direction */
+
+    LATA = 0;
+    TRISA = 0b11111111;
+
+    LATB = 0;
+    TRISA = 0b11111111;
+    
+    LATC = 0;
+    TRISC = 0b11111111;
+    
+    LATD = 0;     
+    TRISD = 0b00111111; //Leds on RD6 and RD7, push buttons on RD4 and RD5
+
+    LATE = 0;
+    TRISE = 0b11111111;
+
+    //ANCON0 = 0b00000000; //channels AN7-AN0 (RE2-RE0 RA5-RA0)
+    //ANCON1 = 0b00000000; //channels AN12-AN8 (RB4 RC2 RB3-RB0)
+
+
 
     /* Initialize peripherals */
 

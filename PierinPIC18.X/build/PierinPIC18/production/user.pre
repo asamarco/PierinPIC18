@@ -12734,6 +12734,23 @@ void InitApp(void);
 void InitApp(void)
 {
 
-# 39
+
+
+LATA = 0;
+TRISA = 0b11111111;
+
+LATB = 0;
+TRISA = 0b11111111;
+
+LATC = 0;
+TRISC = 0b11111111;
+
+LATD = 0;
+TRISD = 0b00111111;
+
+LATE = 0;
+TRISE = 0b11111111;
+
+# 58
 }
 

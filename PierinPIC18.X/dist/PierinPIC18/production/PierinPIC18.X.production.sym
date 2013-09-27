@@ -4,10 +4,19 @@ __S1 21 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
 __size_of_low_isr 0 0 ABS 0
-_main 111E 0 CODE 0
+_LATA F89 0 ABS 0
+_LATB F8A 0 ABS 0
+_LATC F8B 0 ABS 0
+_LATD F8C 0 ABS 0
+_LATE F8D 0 ABS 0
+_main 1140 0 CODE 0
 start 10A2 0 CODE 0
 __CFG_SOSCSEL$HIGH 0 0 ABS 0
+_TRISA F92 0 ABS 0
+_TRISC F94 0 ABS 0
+_TRISD F95 0 ABS 0
 __Hirdata 0 0 CODE 0
+_TRISE F96 0 ABS 0
 __Lirdata 0 0 CODE 0
 __HRAM 0 0 ABS 0
 __LRAM 1 0 ABS 0
@@ -61,7 +70,7 @@ __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 __Hdata 0 0 ABS 0
 __Ldata 0 0 ABS 0
-__end_of_ConfigureOscillator 111E 0 CODE 0
+__end_of_ConfigureOscillator 1140 0 CODE 0
 __Htemp 0 0 COMRAM 1
 __Ltemp 0 0 COMRAM 1
 __Hrbit 0 0 COMRAM 1
@@ -71,12 +80,12 @@ __Linit 10A2 0 CODE 0
 __Hintcodelo 10A2 0 CODE 0
 __Lintcodelo 1018 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 1128 0 CODE 0
+__end_of_main 114A 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __pintcodelo 1018 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-end_of_initialization 1128 0 CODE 0
+end_of_initialization 114A 0 CODE 0
 __end_of_high_isr 110C 0 CODE 0
 __Hibigdata 0 0 CODE 0
 __Libigdata 0 0 CODE 0
@@ -110,17 +119,17 @@ __Hbank9 0 0 ABS 0
 __Lbank9 0 0 ABS 0
 __Htext1 0 0 ABS 0
 __Ltext1 0 0 ABS 0
-__ptext0 111E 0 CODE 0
+__ptext0 1140 0 CODE 0
 __Htext2 0 0 ABS 0
 __Ltext2 0 0 ABS 0
-__ptext1 112E 0 CODE 0
-__ptext2 110C 0 CODE 0
+__ptext1 110C 0 CODE 0
+__ptext2 112E 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of_InitApp 1130 0 CODE 0
+__end_of_InitApp 112E 0 CODE 0
 __CFG_DSWDTOSC$INTOSCREF 0 0 ABS 0
 _OSCTUNEbits F9B 0 ABS 0
-__end_of__initialization 1128 0 CODE 0
+__end_of__initialization 114A 0 CODE 0
 __CFG_CLKOEC$ON 0 0 ABS 0
 __CFG_WPCFG$OFF 0 0 ABS 0
 __Hidata 0 0 CODE 0
@@ -135,7 +144,7 @@ __Hparam 0 0 ABS 0
 __Lparam 0 0 ABS 0
 __HcstackCOMRAM 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
-_InitApp 112E 0 CODE 0
+_InitApp 110C 0 CODE 0
 __pcstackCOMRAM 1 0 COMRAM 1
 __Hsmallconst 0 0 SMALLCONST 0
 __Lsmallconst 0 0 SMALLCONST 0
@@ -143,7 +152,7 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__pcinit 1128 0 CODE 0
+__pcinit 114A 0 CODE 0
 __CFG_DSBOREN$OFF 0 0 ABS 0
 __size_of_ConfigureOscillator 0 0 ABS 0
 __ramtop F00 0 RAM 0
@@ -189,16 +198,16 @@ intlevel1 0 0 CODE 0
 __CFG_WPDIS$OFF 0 0 ABS 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
-start_initialization 1128 0 CODE 0
+start_initialization 114A 0 CODE 0
 __CFG_IESO$OFF 0 0 ABS 0
 __end_of_low_isr 10A2 0 CODE 0
-__initialization 1128 0 CODE 0
+__initialization 114A 0 CODE 0
 __activetblptr 0 0 ABS 0
-_ConfigureOscillator 110C 0 CODE 0
+_ConfigureOscillator 112E 0 CODE 0
 %segments
 reset_vec 1000 1003 CODE 1000 0
 intcode 1008 1017 CODE 1008 0
-intcodelo 1018 112F CODE 1018 0
+intcodelo 1018 114F CODE 1018 0
 config 1FFF8 1FFFF CONFIG 1FFF8 0
 cstackCOMRAM 1 20 COMRAM 1 1
 %locals
@@ -207,19 +216,29 @@ dist/PierinPIC18/production/PierinPIC18.X.production.obj
 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
 interrupts.c
 102 105C 0 CODE 0
-/tmp/cgtxqmVSO
-3649 1128 0 CODE 0
-3650 112A 0 CODE 0
+/tmp/cgtEzIUnf
+3667 114A 0 CODE 0
+3668 114C 0 CODE 0
 main.c
-36 111E 0 CODE 0
-39 1122 0 CODE 0
-43 1126 0 CODE 0
+36 1140 0 CODE 0
+39 1144 0 CODE 0
+43 1148 0 CODE 0
 user.c
-39 112E 0 CODE 0
-system.c
 33 110C 0 CODE 0
-34 110E 0 CODE 0
-36 111C 0 CODE 0
+34 1110 0 CODE 0
+36 1112 0 CODE 0
+37 1116 0 CODE 0
+39 1118 0 CODE 0
+40 111C 0 CODE 0
+42 111E 0 CODE 0
+43 1122 0 CODE 0
+45 1126 0 CODE 0
+46 112A 0 CODE 0
+58 112C 0 CODE 0
+system.c
+33 112E 0 CODE 0
+34 1130 0 CODE 0
+36 113E 0 CODE 0
 interrupts.c
 interrupts.c
 36 10A6 0 CODE 0

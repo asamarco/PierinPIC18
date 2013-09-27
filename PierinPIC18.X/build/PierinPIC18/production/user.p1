@@ -1,4 +1,22 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"10933 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
+"11781
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"11060
+[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
+"11192
+[v _LATC `Vuc ~T0 @X0 0 e@3979 ]
+"11898
+[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"11307
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"11951
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"11439
+[v _LATE `Vuc ~T0 @X0 0 e@3981 ]
+"12012
+[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
 [; ;pic18f47j53.h: 44: extern volatile unsigned char ADCTRIG @ 0xEB8;
 "46 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
 [; ;pic18f47j53.h: 46: asm("ADCTRIG equ 0EB8h");
@@ -9783,7 +9801,37 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user.c: 29: {
 [e :U _InitApp ]
 [f ]
-[; ;user.c: 39: }
+[; ;user.c: 33: LATA = 0;
+"33
+[e = _LATA -> -> 0 `i `uc ]
+[; ;user.c: 34: TRISA = 0b11111111;
+"34
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;user.c: 36: LATB = 0;
+"36
+[e = _LATB -> -> 0 `i `uc ]
+[; ;user.c: 37: TRISA = 0b11111111;
+"37
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;user.c: 39: LATC = 0;
 "39
+[e = _LATC -> -> 0 `i `uc ]
+[; ;user.c: 40: TRISC = 0b11111111;
+"40
+[e = _TRISC -> -> 255 `i `uc ]
+[; ;user.c: 42: LATD = 0;
+"42
+[e = _LATD -> -> 0 `i `uc ]
+[; ;user.c: 43: TRISD = 0b00111111;
+"43
+[e = _TRISD -> -> 63 `i `uc ]
+[; ;user.c: 45: LATE = 0;
+"45
+[e = _LATE -> -> 0 `i `uc ]
+[; ;user.c: 46: TRISE = 0b11111111;
+"46
+[e = _TRISE -> -> 255 `i `uc ]
+[; ;user.c: 58: }
+"58
 [e :UE 1356 ]
 }

@@ -134,11 +134,29 @@
 [v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
 "29 /home/marco/github/PierinPIC18/PierinPIC18.X/user.c
 [v _InitApp InitApp `(v  1 e 0 0 ]
+"10933 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"11060
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"11192
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"11307
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"11439
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"11781
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"11898
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"11951
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"12012
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 [s S34 . 1 `uc 1 TUN 1 0 :6:0 
 `uc 1 PLLEN 1 0 :1:6 
 `uc 1 INTSRC 1 0 :1:7 
 ]
-"12403 /opt/microchip/xc8/v1.20/include/pic18f47j53.h
+"12403
 [s S38 . 1 `uc 1 TUN0 1 0 :1:0 
 `uc 1 TUN1 1 0 :1:1 
 `uc 1 TUN2 1 0 :1:2 
@@ -156,7 +174,7 @@
 "29 /home/marco/github/PierinPIC18/PierinPIC18.X/user.c
 [v _InitApp InitApp `(v  1 e 0 0 ]
 {
-"39
+"58
 } 0
 "25 /home/marco/github/PierinPIC18/PierinPIC18.X/system.c
 [v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]

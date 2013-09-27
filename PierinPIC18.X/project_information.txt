@@ -3,11 +3,11 @@
 Project Owner(s): Asa Marco
 Author(s): Asa Marco
 Hardware Platform: PierinPIC18
-Debuggers Used: none
+Debuggers Used: simulator
 Programmers Used: HIDbootloader
 MPLAB Version: 1.90
 C Compiler Version: 1.20
-Final Checksum: 0x94D0
+Final Checksum: 0x7F73
 
 FILES INCLUDED IN THE PROJECT TREE:
 
