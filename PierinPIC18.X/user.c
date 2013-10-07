@@ -54,6 +54,11 @@ void InitApp(void)
 
     /* Configure the IPEN bit (1=on) in RCON to turn on/off int priorities */
 
+    RCONbits.IPEN = 1;
+
     /* Enable interrupts */
+
+    INTCONbits.GIEL = 1;
+    INTCONbits.GIEH = 1;
 }
 
